@@ -12,6 +12,7 @@ crate-type = ["cdylib"]
 [dependencies]
 napi        = "2"
 napi-derive = "2"
+v_htmlescape = "0.15.8"
 
 [build-dependencies]
 napi-build = "2"
