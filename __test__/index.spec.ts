@@ -1,8 +1,7 @@
 import test from 'ava'
 
-import { plus100 } from '../index'
+import { escape_html } from '../index'
 
 test('sync function from native code', (t) => {
-  const fixture = 42
-  t.is(plus100(fixture), fixture + 100)
+  t.is(escape_html('<div>1</div>'), '&lt;div&gt;1&lt;&#x2f;div&gt;')
 })
